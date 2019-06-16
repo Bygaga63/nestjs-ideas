@@ -8,7 +8,7 @@ import { IdeaDto } from './idea.dto';
 export class IdeaService {
   constructor(
     @InjectRepository(IdeaEntity)
-    private repository: Repository<IdeaEntity>,
+    private readonly  repository: Repository<IdeaEntity>,
   ) {
   }
 
